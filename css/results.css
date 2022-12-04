@@ -1,0 +1,227 @@
+/* CSS RESET */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p, span {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-wrapper img {
+  width: 100px;
+}
+
+.img-wrapper img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Navigation CSS */
+.top-nav {
+  background-color: #99c455;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.navigation {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link:hover{
+  text-decoration: 2px underline #7a176e;
+  cursor: pointer;
+}
+
+.maroon-btn {
+  background-color: #7a176e;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.maroon-btn:hover{
+  background-color:#5f1156;
+}
+
+/* Hidden Nav */
+
+.menu{
+  display: none;
+  cursor: pointer;
+}
+
+.hidden-nav{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.dropdown-nav{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 244, 244);
+}
+
+.hidden-nav-link{
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.hidden-nav-link:hover{
+  background-color: #99c455;
+}
+
+.no-display{
+    display: none;
+  }
+  
+/* Results section */
+.vehicle-img-wrapper img{
+    max-width: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.result-container{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-div{
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.green{
+    color: #5c821f;
+}
+.white{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 1.2em;
+}
+
+.sub-title{
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 920px){
+
+    .input-container{
+      flex-direction: column;
+    }
+  
+    .search-btn{
+      justify-content: center;
+    }
+  
+    .row{
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .dropdown select{
+      min-width: 160px;
+    }
+  }
+  
+  @media screen and (max-width: 705px){
+    .nav-link{
+      display: none;
+    }
+  
+    .maroon-btn{
+      display: none;
+    }
+  
+    .menu{
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 510px) {
+    .item{
+      display: none;
+    }
+    
+  }
