@@ -4,192 +4,262 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Jucy Rentals</title>
   </head>
+<body>
+<!-- Top Navigation -->
+ <header>
+   <div class="top-nav">
+     <div class="nav-items">
+       <span class="item">Call Us<span class="material-symbols-outlined"
+           >expand_more</span></span>
+       <span class="item">Email Us<span class="material-symbols-outlined"
+           >expand_more</span></span>
+       <span class="item">New Zealand<span class="material-symbols-outlined"
+           >expand_more</span></span>
+       <span class="item">English<span class="material-symbols-outlined"
+           >expand_more</span></span>
+     </div>
+     <div class="nav-items">
+       <span class="item">About Us<span class="material-symbols-outlined"
+           >expand_more</span>
+         </span>
+     </div>
+  </div>
+<!-- Navigation -->
+   <div class="navigation">
+     <div class="nav-items">
+       <div class="logo-wrapper">
+         <a href="index.html"><img
+           src="https://www.easyhike.co.nz/wp-content/uploads/2016/05/JUCY-Logo.jpg" alt="" />
+       </div></a>
+       <span class="nav-link">Cars</span>
+       <span class="nav-link">Campervans</span>
+       <span class="nav-link">Experiences</span>
+     </div>
+     <div class="nav-items">
+       <span class="maroon-btn">Check In</span>
+       <span class="maroon-btn">Book Now</span>
+       <div id="menu" class="menu"><span class="material-symbols-outlined">menu</span></div>
+     </div>
+   </div>
+   <div id="hidden_nav" class="hidden-nav no-display">
+     <div class="dropdown-nav">
+     <span class="hidden-nav-link">Cars</span>
+     <span class="hidden-nav-link">Campervans</span>
+     <span class="hidden-nav-link">Experiences</span>
+     <span class="hidden-nav-link">Check In</span>
+     <span class="hidden-nav-link">Book Now</span>
+   </div>
+   </div>
+ </header>
 
-  <body>
-    <header>
-      <div class="top-nav">
-        <div class="nav-items">
-          <span class="item"
-            >Call Us<span class="material-symbols-outlined"
-              >expand_more</span
-            ></span
-          >
-          <span class="item"
-            >Email Us<span class="material-symbols-outlined"
-              >expand_more</span
-            ></span
-          >
-          <span class="item"
-            >New Zealand<span class="material-symbols-outlined"
-              >expand_more</span
-            ></span
-          >
-          <span class="item"
-            >English<span class="material-symbols-outlined"
-              >expand_more</span
-            ></span
-          >
-        </div>
-        <div class="nav-items">
-          <span class="item"
-            >About Us<span class="material-symbols-outlined"
-              >expand_more</span
-            ></span
-          >
-        </div>
-      </div>
-
-      <div class="navigation">
-        <div class="nav-items">
-          <div class="logo-wrapper">
-            <img
-              src="https://www.easyhike.co.nz/wp-content/uploads/2016/05/JUCY-Logo.jpg"
-              alt="" />
-          </div>
-          <span class="nav-link">Cars</span>
-          <span class="nav-link">Campervans</span>
-          <span class="nav-link">Experiences</span>
-        </div>
-        <div class="nav-items">
-          <span class="maroon-btn">Check In</span>
-          <span class="maroon-btn">Book Now</span>
-          <div id="menu" class="menu"><span class="material-symbols-outlined">menu</span></div>
-        </div>
-      </div>
-      <div id="hidden_nav" class="hidden-nav no-display">
-        <div class="dropdown-nav">
-        <span class="hidden-nav-link">Cars</span>
-        <span class="hidden-nav-link">Campervans</span>
-        <span class="hidden-nav-link">Experiences</span>
-        <span class="hidden-nav-link">Check In</span>
-        <span class="hidden-nav-link">Book Now</span>
-      </div>
-      </div>
-    </header>
-
-    <!-- Landing Section -->
-
-    <div class="landing-section">
-      <div class="landing-img">
-        <img src="./images/image 3.png" alt=""></div>
+<!-- Landing Section -->
+<div class="landing-section">
+  <div class="landing-img">
+    <img src="./images/image 3.png" alt="">
+  </div>
     
+<!-- Input Section -->
+<div class="absolute-container">
 
-    <!-- Input Section -->
-
-    <div class="absolute-container">
-      <!-- People -->
-  <div class="input-container">
-    <div class="selection-column row">
-    <div class="input">
-      <label for="people">People:</label>
-      <div class="dropdown">
-        <select name="people" id="people">
-          <option id="1" class="dropdown-option">1</option>
-          <option id="2" class="dropdown-option">2</option>
-          <option id="3" class="dropdown-option">3</option>
-          <option id="4" class="dropdown-option">4</option>
-          <option id="5" class="dropdown-option">5</option>
-          <option id="6" class="dropdown-option">6</option>
-        </select>
+  <div class="landing-heading"><h1>Find <span class="font-change">YOUR </span>happy!</h1></div>
+<!-- Input Section -->
+<!-- People -->
+   <div class="input-container absolute background-color">
+     <div class="selection-column row">
+     <div class="input">
+       <label for="people">People:</label>
+        <div class="dropdown full-width">
+          <select name="people" id="people">
+            <option class="dropdown-option" value='1' >1</option>
+            <option class="dropdown-option" value='2' >2</option>
+            <option class="dropdown-option" value='3' >3</option>
+            <option class="dropdown-option" value='4' >4</option>
+            <option class="dropdown-option" value='5' >5</option>
+            <option class="dropdown-option" value='6' >6</option>
+          </select>
       </div>
-      </div>
-      <!-- Vehicle -->
+   </div>
+ <!-- Vehicle -->
+ <div class="input">
+   <label for="vehicle">Vehicle:</label>
+     <div class="dropdown full-width">
+       <select name="vehicle">
+         <option id="vehicle" class="dropdown-option">Car</option>
+         <option id="vehicle" class="dropdown-option">Campervan</option>
+         <option id="vehicle" class="dropdown-option">Motorbike</option>
+       </select>
+     </div>
+     </div>
+   </div>
+   <!-- Location-->
+   <div class="selection-column row">
+     <div class="input">
+       <label for="pick_up">Pick-up Location:</label>
+       <div class="dropdown full-width">
+         <select name="pick_up">
+           <option id="pick_up_location" class="dropdown-option">Auckland</option>
+           <option id="pick_up_location" class="dropdown-option">Wellington</option>
+           <option id="pick_up_location" class="dropdown-option">Queenstown</option>
+         </select>
+       </div>
+   </div>
+<!-- Drop off location -->
       <div class="input">
-        <label for="vehicle">Vehicle:</label>
-        <div class="dropdown">
-          <select name="vehicle" id="vehicle">
-            <option id="car" class="dropdown-option">Car</option>
-            <option id="campervan" class="dropdown-option">Campervan</option>
-            <option id="motorbike" class="dropdown-option">Motorbike</option>
+        <label for="drop-off">Drop-off Location:</label>
+        <div class="dropdown full-width">
+          <select name="drop_off">
+            <option id="drop_off_location" class="dropdown-option">Auckland</option>
+            <option id="drop_off_location" class="dropdown-option">Wellington</option>
+            <option id="drop_off_location" class="dropdown-option">Queenstown</option>
           </select>
         </div>
+      </div>
+  </div>
+ <!-- Pick up date -->
+  <div class="selection-column row">
+   <div class="input">
+     <label for="date">Pick-up Date:</label>
+     <div class="dropdown full-width">
+       <input id="pick_up_date" type="date" placeholder="dd/mm/yyyy">
+       <div id="pick_up_error" class="error no-display"><span>*Pick up Date Required</span></div>
+     </div>
+     
+   </div>
+  
+        
+<!-- Drop-off Date -->
+  <div class="input">
+    <label for="date">Drop-off Date:</label>
+    <div class="dropdown full-width">
+      <input id="drop_off_date" type="date" placeholder="dd/mm/yyy" >
+      <div id="drop_off_error" class="error no-display"><span>*Drop off Date Required</span></div>
+    </div>
+    
+  </div>
+  
+</div>
+  
+    <!-- Distance & Search -->
+  <div class="selection-column row">
+    <div class="input">
+      <label for="distance">Estimated Distance:</label>
+      <div class="dropdown">
+        <select id="distance_options" name="distance">
+          <option id="100" class="dropdown-option" value="100">100km</option>
+          <option id="200" class="dropdown-option" value="200">200km</option>
+          <option id="300" class="dropdown-option" value="300">300km</option>
+          <option id="400" class="dropdown-option" value="400">400km</option>
+        </select>
+      </div>
+    </div>
+      <div class="input">
+        <label for="date"><br></label>
+        <div class="dropdown">
+          <span id="search_btn">
+            <div class="search-btn">Search
+              <span class="material-symbols-outlined">arrow_right_alt</span></div>
         </div>
       </div>
-      <!-- Pickup -->
-      <div class="selection-column">
-        <div class="input">
-          <label for="pick_up">Pick-up Location:</label>
-          <div class="dropdown full-width">
-            <select name="pick_up" id="pick_up">
-              <option id="pick_up_auckland" class="dropdown-option">Auckland</option>
-              <option id="pick_up_wellington" class="dropdown-option">Wellington</option>
-              <option id="pick_up_queenstown" class="dropdown-option">Queenstown</option>
-            </select>
-          </div>
-        </div>
-        <!-- Pick up Time -->
-        <div class="time-date-row">
-          <div class="input">
-            <label for="time">Pick-up Time:</label>
-            <div class="dropdown">
-              <select name="time" id="pickup_time">
-                <option id="pickup_8am" class="dropdown-option">8:00am</option>
-                <option id="pickup_10am" class="dropdown-option">10:00am</option>
-                <option id="pickup_12pm" class="dropdown-option">12:00pm</option>
-                <option id="pickup_2pm" class="dropdown-option">2:00pm</option>
-                <option id="pickup_4pm" class="dropdown-option">4:00pm</option>
-              </select>
-            </div>
-          </div>
-          <!-- Pick up Date -->
-            <div class="input">
-              <label for="date">Pick-up Date:</label>
-              <div class="dropdown">
-                <input type="date" name="calendar" id="pick_up_calendar">
-              </div>
-            </div>
-            </div>
-          </div>
-          <!-- Drop off Location-->
-          <div class="selection-column">
-            <div class="input">
-              <label for="pick_up">Drop-off Location:</label>
-              <div class="dropdown full-width">
-                <select name="drop_off" id="drop_off">
-                  <option id="drop_off_auckland" class="dropdown-option">Auckland</option>
-                  <option id="drop_off_wellington" class="dropdown-option">Wellington</option>
-                  <option id="drop_off_queenstown" class="dropdown-option">Queenstown</option>
-                </select>
-              </div>
-            </div>
-            <!-- Drop off Time -->
-            <div class="time-date-row">
-              <div class="input">
-                <label for="drop-off-time">Drop-off Time:</label>
-                <div class="dropdown">
-                  <select name="time" id="drop_off_time">
-                    <option id="drop_off_8am" class="dropdown-option">8:00am</option>
-                    <option id="drop_off_10am" class="dropdown-option">10:00am</option>
-                    <option id="drop_off_12pm" class="dropdown-option">12:00pm</option>
-                    <option id="drop_off_2pm" class="dropdown-option">2:00pm</option>
-                    <option id="drop_off_4pm" class="dropdown-option">4:00pm</option>
-                  </select>
-                </div>
-              </div>
-              <!-- Drop-off Date -->
-                <div class="input">
-                  <label for="date">Drop-off Date:</label>
-                  <div class="dropdown">
-                    <input type="date" name="calendar" id="drop_off_calendar">
-                  </div>
-                </div>
-                </div>
-              </div>
-
-              <div class="selection-column flex-end">            
-                    <span id="search_btn" class="search-btn">Search<span class="material-symbols-outlined">
-                      arrow_right_alt
-                      </span></span>
-                </div>
-
-      
+      </div>
+    </div>
     </div>
   </div>
+</div>
+
+<!-- Promos Section -->
+
+<section class="promos-section">
+
+  <div class="promo-heading"><h1>Road trip New Zealand with <span class="font-change">JUCY </span>Rentals!</h1></div>
+
+  <div class="promo-container">
+    <div class="promo">
+      <div class="promo-img-wrapper">
+        <img src="https://www.jucy.com/assets/737_x_421_NZ_-_FINAL__FocusFillWyIwLjAwIiwiMC4wMCIsODU2LDQ5MF0.png" alt="">
+      </div>
+      <div class="promo-row">
+      <div class="promo-heading">
+        <h1>Make it an experience!</h1>
+      </div>
+      <div class="view-more-btn">More Info</div>
+    </div>
+  </div>
+
+    <div class="promo">
+      <div class="promo-img-wrapper">
+        <img src="https://images.squarespace-cdn.com/content/v1/61175b211247a11ee5d6d0b4/70520215-ca71-4902-b49b-69f23484783a/jucy.jpg?format=2500w" alt="">
+      </div>
+      <div class="promo-row">
+      <div class="promo-heading">
+        <h1>See our SUMMER deals!</h1>
+      </div>
+      <div class="view-more-btn">View Deals</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="promo-video">
+  <div class="flex-container">
+  <div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/JceJlnVjhd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-title">
+    <h1 class="font-change">Tour our Vehicles!</h1>
+    <h1>We have a wide range to choose <br> from for your holiday!</h1>
+  </div>
+</div>
+</section>
+
+<footer>
+  
+    <h1 class="promo-heading margin20">Start your Journey with<span class="font-change"> JUCY </span></h1>
+    <div class="footer-div">
+    <div class="footer-flex-div">
+      <p>Follow Us!</p>
+      <div class="socials">
+      <a href="https://www.facebook.com/jucynz/?brand_redir=179404878223"><img class="social-logo" src="./images/facebook.png" alt=""></a>
+      <a href="https://www.facebook.com/jucynz/?brand_redir=179404878223"><img class="social-logo" src="./images/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com/jucynz/?brand_redir=179404878223"><img class="social-logo" src="./images/youtube.png" alt=""></a>
+      <a href="https://www.facebook.com/jucynz/?brand_redir=179404878223"><img class="social-logo" src="./images/linkedin.png" alt=""></a>
+    </div>
+  </div>
+    <div class="footer-flex-div">
+      <div class="links">
+        <a href="">Experiences</a>
+        <a href="">Deals</a>
+        <a href="">Locations</a>
+        <a href="">Policies</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+    <div class="footer-flex-div">
+      <div class="links">
+        <a href="">Safe Drving</a>
+        <a href="">Vehicle Specifications</a>
+        <a href="">About Us</a>
+        <a href="">Useful Tips</a>
+        <a href="">Affiliate Program</a>
+      </div>
+    </div>
+
+    <div class="footer-flex-div">
+     <p>Find Your Happy with JUCY!</p>
+      </div>
+    </div>
+</footer>
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      config = {
+      altInput: true,
+      altFormat: "F j, Y",
+      dateFormat: "Y-m-d",}
+    flatpickr("input[type=date]", config);</script>
+
   </body>
 </html>
